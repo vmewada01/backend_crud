@@ -9,9 +9,9 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.use("/",(req,res)=> {
-    res.send("Welcome to the homepage")
-})
+// app.use("/",(req,res)=> {
+//     res.send("Welcome to the homepage")
+// })
 
 app.use("/auth", AuthRouter)
 
